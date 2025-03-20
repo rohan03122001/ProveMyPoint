@@ -1,4 +1,13 @@
 {
+  "name": "prove-my-point-backend",
+  "version": "1.0.0",
+  "description": "Research paper analysis API for the Prove My Point application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest"
+  },
   "dependencies": {
     "axios": "^1.8.4",
     "cheerio": "^1.0.0",
@@ -7,9 +16,20 @@
     "express": "^4.21.2",
     "express-rate-limit": "^7.5.0",
     "helmet": "^8.1.0",
+    "jsdom": "^22.0.0",
     "morgan": "^1.10.0",
+    "node-cache": "^5.1.2",
     "openai": "^4.88.0",
     "puppeteer": "^24.4.0",
+    "xml-js": "^1.6.11",
     "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
